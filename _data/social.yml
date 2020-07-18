@@ -1,0 +1,22 @@
+# Your social links goes here
+social:
+  - name: Facebook # Name of the Social Network
+    website: https://www.facebook.com/ # Website of the social Network (should end with "/")
+    username: themesberg # Username
+    social_icon: fab fa-facebook # Icon of the social network from Fontawesome (https://fontawesome.com/)
+    title: Like @themesberg on Facebook # Title should be shown on hover
+  - name: Twitter
+    website: https://twitter.com/
+    username: themesberg
+    social_icon: fab fa-twitter
+    title: Follow @themesberg on Twitter
+  - name: Github
+    website: https://github.com/
+    username: themesberg
+    social_icon: fab fa-github
+    title: Open source projects
+  - name: Dribbble
+    website: https://dribbble.com/
+    username: themesberg
+    social_icon: fab fa-dribbble
+    title: Follow us on Dribbble

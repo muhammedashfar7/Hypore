@@ -1,0 +1,31 @@
+
+    <div class="col-3 col-sm-3">
+        <div class="card bg-primary shadow-soft border-light">
+            <div class="card-header"> 
+                <img src="{{site.baseurl}}{{product.image}}" alt="{{ product.name }}"> 
+            </div>
+            <div class="card-body border-top border-light">
+                <a href="#" class="h5">{{ product.name }}</a>
+                <h3 class="h6 font-weight-light text-gray mt-2">{{ product.sub-heading }}</h3>
+                <div class="d-flex mt-3">
+                    <span class="star fas fa-star text-warning mr-1"></span> 
+                    <span class="star fas fa-star text-warning mr-1"></span> 
+                    <span class="star fas fa-star text-warning mr-1"></span> 
+                    <span class="star fas fa-star text-warning mr-1"></span> 
+                    <span class="star fas fa-star text-warning"></span> 
+                    <span class="badge badge-pill badge-gray ml-2">4.7</span>
+                </div>
+            </div>
+            <div class="card-footer border-top border-light p-4">
+                <div class="d-flex align-items-center">
+                    <span class="h5 mb-0 text-gray text-through mr-2">
+                        ${{ product.actual_price }}
+                    </span>
+                    <span class="h6 mb-0 text-danger">${{ product.selling_price }}</span>
+                    <div class="ml-auto">
+                        {% include product-definition.html %}
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>

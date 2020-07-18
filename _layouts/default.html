@@ -1,0 +1,43 @@
+<!--
+
+=========================================================
+* Neumorphism UI - v1.0.0
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui
+* Copyright 2020 Themesberg MIT LICENSE (https://www.themesberg.com/licensing#mit)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+
+<head> 
+<!-- Start Head (metadata + Social Tags + Open Graph Data + Schema.org MarkUp + Twitter Data + Favicon + Fontawesome + Analytics + CSS) -->
+{% include head.html %}
+<!-- End Head-->
+</head>
+
+<body>
+<!-- Start Header + Navigation -->
+{% include header-navigation.html %}
+<!-- End Header + Navigation -->
+<!-- Start Contents-->
+{{ content }}
+<!-- End Contents-->
+<!-- Start Footer -->
+{% include footer.html %}
+<!-- End Footer -->
+<!-- Start Scripts-->
+{% include scripts.html %}
+<!-- End Scripts -->
+</body>
+<!-- Snipcart -->
+<div hidden id="snipcart" data-api-key="NTE0MjJkZWEtMzlkNy00MGFkLWI3ZDItZDlhZTVhODk1MDc5NjM3MTI5NTYxNTMyNzI3OTI1"></div>
+<script src="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.js" defer></script>
+</html>
