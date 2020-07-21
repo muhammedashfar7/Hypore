@@ -24,7 +24,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://120.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://trusting-hoover-a5a0d0.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 thumbnail: https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg
 twitter_username: jekyllrb
 github_username:  jekyll
