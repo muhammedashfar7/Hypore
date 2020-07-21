@@ -1,0 +1,233 @@
+<!--
+    Author card designs.
+    - Minimal
+    - Curved image minimal
+    - curved large image with description
+    - Rounded image with description
+    - Curved image with description
+
+    Change the design from -data >> advanced-settings.yml >> authorcard_design
+-->
+
+{% for author in site.authors %}
+<!--
+    Minimal Design
+-->
+{% if site.data.advanced-settings.authorcard_design == "minimal" %}
+  <div class="col-12 col-md-6 col-lg-4">
+      <!-- Profile Card -->
+      <div class="card bg-primary shadow-soft border-light text-center py-4 mb-5">
+          <div class="profile-image shadow-inset border border-light bg-primary rounded-circle p-3 mx-auto">
+              <img src="{{site.baseurl}}{{author.avatar}}" class="card-img-top shadow-soft p-2 border border-light rounded-circle" alt="{{author.display_name}}">
+          </div>
+          <div class="card-body">
+              <h3 class="h5 mb-2">{{author.display_name}}</h3>
+              <span class="h6 font-weight-normal text-gray mb-3">{{author.position}}</span>
+              <ul class="list-unstyled d-flex justify-content-center my-3">
+                  <li>
+                      <a href="https://facebook.com/{{author.facebook_username}}" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook mr-3">
+                          <span class="fab fa-facebook-f"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/{{author.github_username}}" target="_blank" aria-label="github social link" class="icon icon-xs icon-twitter mr-3">
+                          <span class="fab fa-github"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://slack.com/{{author.slack_username}}" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack mr-3">
+                          <span class="fab fa-slack-hash"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://dribbble.com/{{author.dribble_username}}" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                          <span class="fab fa-dribbble"></span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!-- End of Profile Card -->
+  </div>
+{% endif %}
+<!--
+    Curved Minimal
+-->
+{% if site.data.advanced-settings.authorcard_design == "curved-minimal" %}
+<div class="col-12 col-md-6 col-lg-4 mb-6 mb-md-5">
+    <!-- Profile Card -->
+    <div class="profile-card mb-5">
+        <div class="card bg-primary shadow-inset border-light text-center">
+            <div class="card-header">
+                <div class="profile-image bg-primary shadow-inset border border-light rounded mx-auto p-3 mt-n6">
+                    <img src="{{site.baseurl}}{{author.avatar}}" class="card-img-top rounded" alt="{{author.display_name}}">
+                </div>
+            </div>
+            <div class="card-body pb-5">
+                <h3 class="h5 mb-2">{{author.display_name}}</h3>
+                <span class="h6 font-weight-normal text-gray mb-3">{{author.position}}</span>
+                <ul class="list-unstyled d-flex justify-content-center mt-3 mb-4">
+                    <li>
+                        <a href="https://facebook.com/{{author.facebook_username}}" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook mr-3">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/{{author.github_username}}" target="_blank" aria-label="github social link" class="icon icon-xs icon-twitter mr-3">
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://slack.com/{{author.slack_username}}" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack mr-3">
+                            <span class="fab fa-slack-hash"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/{{author.dribble_username}}" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                            <span class="fab fa-dribbble"></span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="btn btn-sm btn-primary mr-3" href="{{author.follow_btn}}">
+                    <span class="fas fa-user-plus mr-1"></span> Follow
+                </a>
+                <a class="btn btn-sm btn-primary" href="{{author.message_btn}}">
+                    Message
+                </a>                                
+            </div>
+        </div>
+    </div>
+    <!-- End of Profile Card -->
+</div>
+{% endif %}
+<!--
+    large curved image with description
+-->
+{% if site.data.advanced-settings.authorcard_design == "large-descriptive" %}
+<div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+  <!-- Profile Card -->
+  <div class="card bg-primary shadow-soft border-light">
+      <div class="card-header p-4">
+          <img src="{{site.baseurl}}{{author.avatar}}" class="card-img-top rounded" alt="Wood Portrait">
+      </div>
+      <div class="card-body pt-2">
+          <h3 class="h5 mb-2">{{author.display_name}}</h3>
+          <span class="h6 font-weight-normal text-gray mb-4">{{author.position}}</span>
+          <p class="card-text">{{author.bio}}</p>
+          <ul class="list-unstyled d-flex my-3">
+              <li>
+                  <a href="https://facebook.com/{{author.facebook_username}}" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook mr-3">
+                      <span class="fab fa-facebook-f"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://github.com/{{author.github_username}}" target="_blank" aria-label="github social link" class="icon icon-xs icon-twitter mr-3">
+                      <span class="fab fa-github"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://slack.com/{{author.slack_username}}" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack mr-3">
+                      <span class="fab fa-slack-hash"></span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://dribbble.com/{{author.dribble_username}}" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                      <span class="fab fa-dribbble"></span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <!-- End of Profile Card -->
+</div>
+{% endif %}
+<!--
+    Curved image with Description
+-->
+{% if site.data.advanced-settings.authorcard_design == "curved-descriptive" %}
+<div class="col-12 col-md-6 col-lg-4 mb-6 mb-md-5">
+    <!-- Profile Card -->
+    <div class="profile-card mb-5">
+        <div class="card bg-primary shadow-soft border-light">
+            <div class="profile-image bg-primary shadow-inset border border-light rounded p-3 ml-3 mt-n5">
+                <img src="{{site.baseurl}}{{author.avatar}}" class="card-img-top rounded" alt="{{author.display_name}}">
+            </div>
+            <div class="card-body">
+                <h3 class="h5 mb-2">{{author.display_name}}</h3>
+                <span class="h6 font-weight-normal text-gray mb-3">{{author.position}}</span>
+                <ul class="list-unstyled d-flex my-3">
+                    <li>
+                        <a href="https://facebook.com/{{author.facebook_username}}" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook mr-3">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/{{author.github_username}}" target="_blank" aria-label="github social link" class="icon icon-xs icon-twitter mr-3">
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://slack.com/{{author.slack_username}}" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack mr-3">
+                            <span class="fab fa-slack-hash"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/{{author.dribble_username}}" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                            <span class="fab fa-dribbble"></span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="card-text">{{author.bio}}</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Profile Card -->
+</div>
+{% endif %}
+<!--
+    Rounded image with Description
+-->
+{% if site.data.advanced-settings.authorcard_design == "rounded-descriptive" %}
+<div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-5">
+    <!-- Profile Card -->
+    <div class="profile-card mb-5">
+        <div class="card bg-primary shadow-soft border-light">
+            <div class="profile-image bg-primary shadow-inset border border-light rounded-circle p-3 ml-3 mt-n5">
+                <img src="{{site.baseurl}}{{author.avatar}}" class="card-img-top rounded-circle" alt="{{author.display_name}}">
+            </div>
+            <div class="card-body">
+                <h3 class="h5 mb-2">{{author.display_name}}</h3>
+                <span class="h6 font-weight-normal text-gray mb-3">{[author.position]}</span>
+                <ul class="list-unstyled d-flex my-3">
+                    <li>
+                        <a href="https://facebook.com/{{author.facebook_username}}" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook mr-3">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/{{author.github_username}}" target="_blank" aria-label="github social link" class="icon icon-xs icon-twitter mr-3">
+                            <span class="fab fa-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://slack.com/{{author.slack_username}}" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack mr-3">
+                            <span class="fab fa-slack-hash"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/{{author.dribble_username}}" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                            <span class="fab fa-dribbble"></span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="card-text">{{author.bio}}</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Profile Card -->
+</div>
+{% endif %}
+{% endfor %}
+<!--
+    End Author card design
+-->

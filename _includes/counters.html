@@ -1,0 +1,124 @@
+        <!--
+            JQuery Counters.
+            Available designs:
+            1. Counter with rounded default.
+            2. Counter with rounded default icon & text.
+            3. Counter with rounded inset icon & text.
+            4. Counter with rounded inset shadow.
+            5. Boxed counter with inset icon & counter shadow.
+            6. Boxed counter with inset background shadow.
+            7. Boxed with inset box shadow.
+
+        To change the design _data >> advanced-settings.yml >> counter_design
+        -->
+                {% for item in page.counters %}
+                    <!--
+                        Counter with rounded default
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "rounded-default" %}
+                    <div class="col-12 col-sm-6 col-lg-3 text-center mt-4">
+                        <div class="icon-box mb-4">
+                            <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                                <span class="far fa-smile-beam"></span>
+                            </div>
+                            <h3 class="h5">Team Members</h3>
+                            <span class="counter display-3 text-gray d-block">500</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!--
+                        Counter with rounded default icon & text
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "rounded-default-icon-text" %}
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0 text-center mt-4">
+                        <div class="icon icon-shape shadow-soft border border-light rounded-circle mb-4">
+                            <span class="fas fa-globe-europe"></span>
+                        </div>
+                        <div class="shadow-soft rounded border border-light py-4">
+                            <span class="counter h1 d-block">15</span>
+                            <span class="h5">Countries</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!--
+                        Counter with rounded inset icon & text
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "rounded-inset-icon-text" %}
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0 text-center mt-4">
+                        <div class="icon icon-shape shadow-inset border border-light rounded-circle mb-4">
+                            <span class="fas fa-fire-alt"></span>
+                        </div>
+                        <div class="shadow-inset rounded border border-light py-4">
+                            <span class="counter h1 d-block">300</span>
+                            <span class="h5">Events</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!--
+                        Counter with rounded inset shadow
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "rounded-inset" %}
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0 text-center mt-4">
+                        <div class="icon icon-shape shadow-inset border-light rounded-circle mb-4">
+                            <span class="far fa-laugh-beam"></span>
+                        </div>
+                        <span class="counter h1 d-block">500</span>
+                        <span class="h5">Happy people</span>
+                    </div>
+                    {% endif %}
+                    <!--
+                        Boxed counter with inset icon & counter shadow
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "boxed-inset-icon-text" %}
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0 text-center mt-4">
+                        <div class="card bg-primary shadow-soft border-light p-4">
+                            <div class="card-body">
+                                <div class="icon icon-shape shadow-inset rounded mb-4">
+                                    <span class="fab fa-mailchimp"></span>
+                                </div>
+                            </div>
+                            <div class="card-footer shadow-inset rounded">
+                                <span class="counter h1 d-block">5478</span>
+                                <span class="h5">Subscribers</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!--
+                        Boxed counter with inset background shadow
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "boxed-inset-background" %}
+                    <div class="col-12 col-sm-6 col-lg-3 text-center mt-4">
+                        <div class="card bg-primary shadow-inset border-light p-4">
+                            <div class="card-body">
+                                <div class="icon icon-shape shadow-soft rounded mb-4">
+                                    <span class="fas fa-file-contract"></span>
+                                </div>
+                            </div>
+                            <div class="card-footer shadow-soft rounded">
+                                <span class="counter h1 d-block">478</span>
+                                <span class="h5">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!--
+                        Boxed with inset box shadow
+                    -->
+                    {% if site.data.advanced-settings.counter_design == "boxed-inset-box" %}
+                    <div class="col-12 col-sm-6 col-lg-3 text-center mt-4">
+                        <div class="card bg-primary shadow-inset border-light p-3">
+                            <div class="card-body shadow-soft border border-light rounded">
+                                <div class="icon icon-shape rounded-circle shadow-inset mb-4">
+                                    <span class="fas fa-file-contract"></span>
+                                </div>
+                                <span class="counter h1 d-block">478</span>
+                                <span class="h5">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            <!--
+                End Counters
+            -->
