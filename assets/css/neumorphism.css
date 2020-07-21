@@ -32280,7 +32280,8 @@ article a:hover {
 
 /*# sourceMappingURL=neumorphism.css.map */
 .product-count {
-    background: #cc0d0d;
+    background: rgb(131,58,180);
+    background: linear-gradient(36deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
     color: #fff;
     font-size: 10px;
     height: 15px;
@@ -32291,10 +32292,21 @@ article a:hover {
 }
 .cart-price {
     font-size: 10px;
-    background: #ca1515;
+    background: rgb(131,58,180);
+    background: linear-gradient(36deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
     position: relative;
     color: #fff;
     padding: 0px 5px;
     border-radius: 5px;
     margin-top: 20px;
+}
+.gradient-text {
+    background: rgb(131,58,180);
+    background: linear-gradient(36deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }

@@ -72,10 +72,14 @@
 }
 
 .snipcart__box {
-	padding: 32px 16px;
-	position: relative;
-	margin-bottom: 10.66667px;
-	background-color: #fff
+    padding: 32px 16px;
+    position: relative;
+    margin-bottom: 10.66667px;
+    background-color: #e6e7ee;
+    border: .0625rem solid #D1D9E6 !important;
+    border-radius: .55rem;
+	box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
+	margin-bottom: 15px;
 }
 
 @media (min-width:1024px) {
@@ -309,20 +313,23 @@
 }
 
 .snipcart__actions--link {
-	text-decoration: none;
-	color: #52bcf8;
-	font-family: Open Sans, sans-serif;
-	font-size: 14px;
-	border: none;
-	background-color: transparent;
-	cursor: pointer
+    text-decoration: none;
+    color: #31383c;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.0625rem solid #D1D9E6;
+    border-radius: .25rem;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 
 }
 
-.snipcart__actions--link:focus {
-	outline: 5px auto -webkit-focus-ring-color;
-	outline-color: -webkit-focus-ring-color;
-	outline-style: auto;
-	outline-width: 5px
+.snipcart__actions--link:hover {
+	background-color: #e6e7ee;
+	border-color: #e6e7ee;
+	box-shadow: inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff;
 }
 
 .snipcart__button--icon {
@@ -431,7 +438,14 @@
 }
 
 .snipcart__icon--left {
-	margin-right: 10px
+    margin-right: 10px;
+    background: rgb(131,58,180);
+    background: linear-gradient(36deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    border-radius: 50%;
+    height: 2.725rem;
+    width: 2.725rem;
+    padding: 10px;
 }
 
 .snipcart__icon--small {
@@ -489,7 +503,7 @@
 }
 
 .snipcart__icon--blue-dark path {
-	fill: #5082e4
+	fill: #fff;
 }
 
 .snipcart-overlay--disabled {
@@ -1469,7 +1483,7 @@
 	height: 80px;
 	margin-right: 24px;
 	-o-object-fit: cover;
-	object-fit: cover
+	object-fit: contain;
 }
 
 .snipcart-dashboard__order-item-name {
@@ -1601,7 +1615,6 @@
 }
 
 .snipcart-order__box {
-	margin-bottom: 1px
 }
 
 .snipcart-order__details-title,
